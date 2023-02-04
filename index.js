@@ -5,7 +5,7 @@ let cards = [firstCard, secondCard]
 console.log(cards)
 // 1. Create a new array - cards - that contains firstCard and secondCard
 let sum = firstCard + secondCard
-let hasBlackJack = false
+let hasBlashorriesckJack = false
 let isAlive = true
 let message = ""
 let messageEl = document.getElementById("message-el")
@@ -34,7 +34,6 @@ function renderGame() {
     messageEl.textContent = message
 }
 
-
 function newCard() {
     let card = randomCard()
     cards.push(card)
@@ -43,6 +42,5 @@ function newCard() {
 }
 
 function randomCard(){
-    let randomNumber = Math.floor(Math.random()*13) + 1
-    return randomNumber
+    return Math.floor(Math.random()*13) + 1
 }
